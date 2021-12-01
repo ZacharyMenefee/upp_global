@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Projects | UPP Global</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-     <!-- NAVIGATION -->
-     <nav class="nav-bar">
-        <div class="logo">
-            <a href="index.html"><img src="" id="logo" alt="UPP Logo"></a>
-        </div>
-        <div id="navigation-links">
-            <a href="about.html">About Us</a>
-            <a href="#">Our Projects</a>
-            <a href="get_involved.html">Get Involved</a>
-            <a href="blog.html">Blog</a>
-            <div>
-                <button class="donate-now-btn">Donate Now</button>
+    <!-- NAVIGATION -->
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="" id="logo" alt="UPP Logo"></a>
             </div>
-        </div>
-    </nav>
+
+            <!-- Navigation Links Full Screen-->
+            <ul id="navigation-links-fs">
+                <li class="navigation-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="navigation-item"><a href="projects.html" class="nav-link">Our Projects</a></li>
+                <li class="navigation-item"><a href="get_involved.html" class="nav-link">Get Involved</a></li>
+                <li class="navigation-item"><a href="blog.html" class="nav-link">Blog</a></li>
+
+                <div class="donate-button navigation-item">
+                    <button class="donate-now-btn nav-link">Donate Now</button>
+                </div>
+            </ul>
+
+            <!-- Hamburger Navigation -->
+            <div class="hamburger-navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
     <!-- Hero Image and Quote-->
     <header>
         <img src="" alt="">
-        <h1>Education must fully assume its central role in helping people to forge more just, peaceful, and tolerant societies. </h1>
+        <h1>Education must fully assume its central role in helping people to forge more just, peaceful, and tolerant
+            societies. </h1>
         <h3>— Ban Ki-moon, former Secretary-General of the United Nations</h3>
     </header>
     <!-- Project Sections -->
@@ -69,7 +86,7 @@
         </div>
     </main>
 
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -94,6 +111,7 @@
             </p>
         </div>
     </footer>
-
+    <script src="js/app.js" type="text/javascript"></script>
 </body>
+
 </html>
