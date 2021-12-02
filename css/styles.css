@@ -21,8 +21,8 @@ body {
 }
 
 body {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -55,7 +55,7 @@ main {
 .nav-link {
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: white;
 }
 
 .nav-link:hover {
@@ -72,8 +72,10 @@ main {
 /* Navigation Bar Donate Button*/
 
 .donate-now-btn {
-    background-color: aqua;
+    background-color: #22bce2;
     padding: 10px 15px;
+    border: #22bce2;
+    font-size: 16px
 }
 
 /* Hamburger Styles */
@@ -92,8 +94,67 @@ main {
     background-color: #101010;
 }
 
+/** HERO IMAGE **/ 
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
 
+body, header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+}
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/static/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-content {
+    position: relative;
+    /* color: white; */
+    margin: .25rem;
+    margin-left: 100px;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.hero-button {
+    background-color: #22bce2;
+    padding: 10px 15px;
+    border: #22bce2;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+ 
 /* FONTS FORMATTING */
 
 html {
