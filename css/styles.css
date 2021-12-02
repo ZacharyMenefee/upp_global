@@ -13,9 +13,25 @@ a {
 }
 
 
-/* Navigation Bar CSS */ 
+/** PAGE SIZING AND ORGANIZATION **/
 
-.header{
+html,
+body {
+    height: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Navigation Bar CSS */
+
+.header {
     border-bottom: 1px solid #E2E8F0;
 }
 
@@ -23,13 +39,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem; 
+    padding: 1rem 1.5rem;
 }
 
 #navigation-links-fs {
- display: flex;
- justify-content: space-between;
- align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation-item {
@@ -53,6 +69,12 @@ a {
     border: 0;
 }
 
+/* Navigation Bar Donate Button*/
+
+.donate-now-btn {
+    background-color: aqua;
+    padding: 10px 15px;
+}
 
 /* Hamburger Styles */
 
@@ -74,7 +96,7 @@ a {
 
 /* FONTS FORMATTING */
 
-html{
+html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 75%;
 }
@@ -82,7 +104,7 @@ html{
 
 /* media query for hamburger animation */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     #navigation-links-fs {
         position: fixed;
         left: -100%;
@@ -109,17 +131,17 @@ html{
         cursor: pointer;
     }
 
-    /* active class settings for hamburger menu*/ 
+    /* active class settings for hamburger menu*/
 
     .hamburger-navigation.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .hamburger-navigation.active  .bar:nth-child(1) {
+    .hamburger-navigation.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger-navigation.active  .bar:nth-child(3) {
+    .hamburger-navigation.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -127,9 +149,10 @@ html{
 
 /** 
 
-FOOTER CSS 
+ALL RELATED FOOTER CSS
 
-**/ 
+**/
+
 footer h2 {
     text-align: center;
 }
@@ -138,25 +161,68 @@ footer h2 {
     padding-top: 2rem;
 }
 
-.title-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+/**
+
+FOOTER FLEX BOX CSS 
+
+**/
 
 .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 75px;
+}
+
+.all-rights {
+    font-size: 1.25rem;
+}
+
+.f-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
+    border-top: 30px;
+    padding-bottom: 30px;
+}
+
+i {
+    padding: 5px;
+    padding-top: 7px;
+}
+
+#ig-logo {
+    padding-left: 0;
+}
+
+#social-links {
+    padding-top: 10px;
+}
+
+.title-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.title-links h2 {
+    font-size: 28px;
 }
 
 .footer-navigation-links {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 100px;
 }
 
 .f-nav-link {
     flex: 50%;
 }
 
+.f-nav-link a {
+    font-size: 1.5rem;
+}
