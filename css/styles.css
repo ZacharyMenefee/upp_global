@@ -1,4 +1,162 @@
-
-.navigation-links {
-    display: none; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navigation Bar CSS */ 
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem; 
+}
+
+#navigation-links-fs {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.navigation-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+#logo {
+    width: auto;
+    max-width: 100%;
+    max-height: 145px;
+    border: 0;
+}
+
+
+/* Hamburger Styles */
+
+.hamburger-navigation {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+
+/* FONTS FORMATTING */
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 75%;
+}
+
+
+/* media query for hamburger animation */
+
+@media only screen and (max-width: 768px){
+    #navigation-links-fs {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    #navigation-links-fs.active {
+        left: 0;
+    }
+
+    .navigation-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger-navigation {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* active class settings for hamburger menu*/ 
+
+    .hamburger-navigation.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-navigation.active  .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-navigation.active  .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/** 
+
+FOOTER CSS 
+
+**/ 
+footer h2 {
+    text-align: center;
+}
+
+#social-links {
+    padding-top: 2rem;
+}
+
+.title-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-nav-link {
+    flex: 50%;
+}
+
