@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -77,6 +70,16 @@ a {
     background-color: #101010;
 }
 
+
+
+/* FONTS FORMATTING */
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 75%;
+}
+
+
 /* media query for hamburger animation */
 
 @media only screen and (max-width: 768px){
@@ -121,3 +124,39 @@ a {
     }
 
 }
+
+/** 
+
+FOOTER CSS 
+
+**/ 
+footer h2 {
+    text-align: center;
+}
+
+#social-links {
+    padding-top: 2rem;
+}
+
+.title-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-nav-link {
+    flex: 50%;
+}
+
