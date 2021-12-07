@@ -94,18 +94,19 @@ main {
     background-color: #101010;
 }
 
-/** HERO IMAGE **/ 
+/** HERO IMAGE **/
 .hero {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
 }
 
-body, header {
+body,
+header {
     position: absolute;
     width: 100%;
     z-index: 999;
@@ -154,7 +155,7 @@ body, header {
     margin-top: 1rem;
 }
 
- 
+
 /* FONTS FORMATTING */
 
 html {
@@ -166,7 +167,7 @@ html {
 
 .mission-statement-flex {
     display: flex;
-    margin: 100px 60px ;
+    margin: 100px 60px;
 }
 
 .m-flex-image {
@@ -190,7 +191,7 @@ html {
     justify-content: flex-start;
     align-items: center;
     padding-top: 30px;
-  
+
 }
 
 .m-flex-title {
@@ -206,8 +207,182 @@ html {
 /** INFORMATION IMAGE AND WHAT WE DO SECTION **/
 
 .information-section {
+
+    /*CONTAINER MOVEMENT*/
     position: relative;
+    min-width: 100%;
+    height: 700px;
+    padding-bottom: -30px;
+
+    /* BACKGROUND IMAGE QUALITIES */
+    background-image: url(/static/kids-image.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.information-section::after {
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.info-content {
+    z-index: 150;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    height: 200px;
+    width: 500px;
+    margin-right: 300px;
+}
+
+.info-header {
+    z-index: 150;
+    font-size: 24px;
+    color: white;
+    margin: 20px;
+}
+
+.info-text {
+    z-index: 150;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.info-text a{
+    color: #22bce2 ;
+}
+
+.info-text a:hover{
+    color: white;
+    text-decoration: underline;
+    transition: color 1000ms;
+}
+
+/* FACTS SECTION */
+
+#facts-sect {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/*testimonials section */
+.test-content {
+    display: flex;
+    flex-direction: row;
+}
+
+/** 
+
+ALL RELATED FOOTER CSS
+
+**/
+
+footer h2 {
     text-align: center;
+}
+
+#social-links {
+    padding-top: 2rem;
+}
+
+
+/**
+
+FOOTER FLEX BOX CSS 
+
+**/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 75px;
+    height: 350px;
+    background: rgb(95, 79, 146);
+    background: linear-gradient(180deg, rgba(95, 79, 146, 1) 23%, rgba(95, 79, 146, 1) 34%, rgba(34, 188, 226, 1) 82%);
+}
+
+.all-rights {
+    font-size: 1.25rem;
+}
+
+.f-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 30px;
+    padding-bottom: 30px;
+}
+
+i {
+    padding: 5px;
+    padding-top: 7px;
+}
+
+#footer-title {
+    color: white;
+}
+
+#ig-logo {
+    padding-left: 0;
+}
+
+#social-links {
+    padding-top: 10px;
+}
+
+#social-links a {
+    color: white;
+}
+
+.title-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.title-links h2 {
+    font-size: 28px;
+}
+
+.footer-navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 100px;
+}
+
+.f-nav-link {
+    flex: 50%;
+}
+
+.f-nav-link a {
+    font-size: 1.5rem;
+    color: #22bce2;
+}
+
+.f-nav-link a:hover {
+    color: white;
+    text-decoration: underline;
+    transition: color 1000ms;
+}
+
+.all-rights {
     color: white;
 }
 
@@ -240,6 +415,10 @@ html {
         cursor: pointer;
     }
 
+    .nav-link {
+        color: black;
+    }
+
     /* active class settings for hamburger menu*/
 
     .hamburger-navigation.active .bar:nth-child(2) {
@@ -254,84 +433,4 @@ html {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-}
-
-/** 
-
-ALL RELATED FOOTER CSS
-
-**/
-
-footer h2 {
-    text-align: center;
-}
-
-#social-links {
-    padding-top: 2rem;
-}
-
-
-/**
-
-FOOTER FLEX BOX CSS 
-
-**/
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 75px;
-}
-
-.all-rights {
-    font-size: 1.25rem;
-}
-
-.f-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    border-top: 30px;
-    padding-bottom: 30px;
-}
-
-i {
-    padding: 5px;
-    padding-top: 7px;
-}
-
-#ig-logo {
-    padding-left: 0;
-}
-
-#social-links {
-    padding-top: 10px;
-}
-
-.title-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 100px;
-}
-
-.title-links h2 {
-    font-size: 28px;
-}
-
-.footer-navigation-links {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 100px;
-}
-
-.f-nav-link {
-    flex: 50%;
-}
-
-.f-nav-link a {
-    font-size: 1.5rem;
 }
