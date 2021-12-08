@@ -240,27 +240,33 @@ html {
 
 .info-content {
     z-index: 150;
-    position: absolute;
-    top: 200px;
-    right: 0px;
-    height: 200px;
-    width: 500px;
-    margin-right: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .info-header {
     z-index: 150;
     font-size: 24px;
     color: white;
-    margin: 20px;
+    
 }
 
+.info-para {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 50px;
+}
 .info-text {
     z-index: 150;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    margin: 20px;
+    align-self: start;
+    margin: 15px 0;
+    width: 50%;
 }
 
 .info-text a{
@@ -478,6 +484,11 @@ i {
 }
 
 @media only screen  and (max-width: 1399px) {
+
+    .hero-content {
+        margin: 0 45px;
+    }
+
     .mission-statement-flex {
         display: flex;
         flex-direction: column;
@@ -507,6 +518,10 @@ i {
 }
 @media only screen and (max-width: 768px) {
 
+    /* RESPONSIVE HERO IMAGE */
+    .hero-content {
+        margin: 0 15px;
+    }
     /* RESPONSIVE NAVIGATION SIZING */
     #navigation-links-fs {
         position: fixed;
@@ -575,10 +590,32 @@ i {
         height: auto;
     }
 
+    /* INFO SECTION */
+
+    .information-section {
+        height: min-content;
+    }
+    
+    .info-content {
+        align-items: flex-start;
+    }
+
+    .info-para {
+        width: 100%;
+    }
+
+    .info-text {
+        align-self: center;
+        width: 100%;
+    }
+
     .m-content {
         padding: 0;
     }
 
+    .info-content {
+        align-self: center;
+    }
     /*FACTS SECTION */
     .fact-content {
         align-self: flex-start;
@@ -601,7 +638,6 @@ i {
         justify-content: center;
         align-items: center;
     }
-    
 
     .title-links {
         padding-left: 0;
