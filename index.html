@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>UPP Global</title>
 
     <!-- GOOGLE FONTS -->
@@ -21,10 +23,14 @@
 
 </head>
 
+<!-- BODY OF WEBSITE -->
+
 <body>
-    
-    <!-- NAVIGATION -->
+
+
+    <!-- BEGIN HEADER -->
     <header>
+        <!-- NAVIGATION -->
         <nav class="nav-bar">
             <div class="logo">
                 <a href="#"><img src="static/UPP+Global+logo.png" id="logo" alt="UPP Logo"></a>
@@ -51,94 +57,137 @@
         </nav>
     </header>
 
-
-
     <!-- Main Body-->
     <main class="main-content">
         <!-- Hero Image-->
         <section class="hero">
-            <img src="" alt="Image of Kids" class="hero-img">
-            <h1>UPP Global</h1>
-            <h2>We believe in a world where all people are equal, have access to equal oppourtunities, and are given
-                the
-                tools needed to thrive in this world.</h2>
-            <button class="get-involved-btn">Get Involved</button>
+            <div class="hero-content">
+                <h1 class="hero-title">UPP Global</h1>
+                <h2 class="hero-subtitle">We believe in a world where all people are equal, have access to equal
+                    oppourtunities, and are given
+                    the
+                    tools needed to thrive in this world.</h2>
+                <button class="hero-button">Get Involved</button>
+            </div>
         </section>
         <!-- Mission Statement -->
         <section class="mission-statement">
-            <div class="flex">
-                <img src="" alt="UN Mission 4">
-                <h3>
-                    Our Mission
-                </h3>
-                <p>
-                    To uplift the community by contributing to United Nations Sustainable Development <b>Number 4:
-                        Quality Education </b> and <b> Goal 10: Reduced Inequalities. </b>
-                </p>
-                <p>
-                    Through the advancement of education and sport we empower youth, provide opportunities for <i>young
-                        people</i> and work towards a reduction in inequality worldwide.
-                </p>
-                <img src="" alt="UN Mission 10">
+            <div class="mission-statement-flex">
+                <img class="m-flex-image" src="/static/mission-statement-4.jpg" alt="UN Mission 4">
+
+                <div class="m-content">
+                    <h3 class="m-flex-title">
+                        Our Mission
+                    </h3>
+                    <p class="m-flex-text">
+                        To uplift the community by contributing to United Nations Sustainable Development <b>Number 4:
+                            Quality Education </b> and <b> Goal 10: Reduced Inequalities. </b>
+                    </p>
+                    <p class="m-flex-text">
+                        Through the advancement of education and sport we empower youth, provide opportunities for
+                        <i>young
+                            people</i> and work towards a reduction in inequality worldwide.
+                    </p>
+                </div>
+
+                <img class="m-flex-image" src="/static/external-content.duckduckgo.com.jpg" alt="UN Mission 10">
+            </div>
             </div>
         </section>
+
         <!-- What We Do Section-->
-        <section>
-            <img src="" alt="Picture of Kids">
-            <h3>What we do</h3>
-            <p><a href="">Our projects</a> aim to provide all children and youth free access to quality education and
-                other opportunities.</p>
-            <p>We work towards reducing inequalities based on income, sex, age, disability, sexual orientation, race,
-                class, ethnicity, religion and opportunity.</p>
-            <p>We tackle world issues through the creation of tailor made projects that are designed to <i>uplift</i>
-                and <i>inspire</i> those who are involved.</p>
+        <section class="information-section">
+            <div class="info-content">
+                <h3 class="info-header">What We Do</h3>
+                <p class="info-text"><a href="">Our projects</a> aim to provide all children and youth free access to
+                    quality education and
+                    other opportunities.</p>
+                <p class="info-text">We work towards reducing inequalities based on income, sex, age, disability, sexual
+                    orientation, race,
+                    class, ethnicity, religion and opportunity.</p>
+                <p class="info-text">We tackle world issues through the creation of tailor made projects that are
+                    designed
+                    to <i>uplift</i>
+                    and <i>inspire</i> those who are involved.</p>
+            </div>
         </section>
 
         <!-- Facts Section-->
-        <section>
-            <ul>
-                <li>
-
+        <section id="facts-sect">
+            <h2 id="fact-title">Facts:</h2>
+            <ul class="facts-list">
+                <li class="fact-item">
+                    In 2020 inequality grew for more than 70% of the global population.
                 </li>
-                <li>
-
+                <li class="fact-item">
+                    91% of students worldwide have been impacted by the temporary closures of schools.
                 </li>
-                <li>
-
+                <li class="fact-item">
+                    In April 2020, close to <a href="https://en.unesco.org/covid19/educationresponse">1.6 billion children and youth were out of school </a>.
                 </li>
-                <li>
-
+                <li class="fact-item">
+                    The effects of COVID-19 have exacerbated this issue, with young people and children the most
+                    vulnerable groups affected by growing inequality.
                 </li>
-                <li>
-
+                <li class="fact-item">
+                    “One in five persons reported being discriminated against on at least one ground of discrimination
+                    prohibited by international human rights law”.
                 </li>
             </ul>
+
+            <p id="quote">- UN Sustainable Development Goals </p>
         </section>
         <!-- Testminonials -->
         <section id="testimonials">
-            <div>
-                <p>
-
-                </p>
-                <h3>
-
-                </h3>
-            </div>
-            <div>
-                <p>
-
-                </p>
-                <h3>
-
-                </h3>
-            </div>
-            <div>
-                <p>
-
-                </p>
-                <h3>
-
-                </h3>
+            <h2 class="test-title">Testimonials</h2>
+            <div class="test-content">
+                <div class="test-item">
+                    <p class="test-text">
+                        “I would recommend UPP to others because the organization really cares about children's needs
+                        and it
+                        would be a rich experience for anyone with a passion for social work to volunteer for this team.
+                        There were so many ideas, so much enthusiasm that I can see in UPP Global so I hope they keep it
+                        that way, and if there’s a chance I still want to work with them in the future.”
+                    </p>
+                    <h3 class="text-cite">
+                        — Lami (Volunteer)
+                    </h3>
+                    <h3 class="text-project">
+                        Project: Weekly English Classes
+                    </h3>
+                </div>
+                <div class="test-item">
+                    <p class="test-text">
+                        “The class was fun because I got to meet other people around the world. I also liked that Toro
+                        was
+                        teaching the other kids about kindness and responsibility.
+                    </p>
+                    <p class="test-text">
+                        What I enjoyed about this class is I got to show other people the things that I am into and I
+                        got to
+                        learn about what other kids are into as well. ”
+                    </p>
+                    <h3 class="text-cite">
+                        — Kýziah , 10 years old ( Student)
+                    </h3>
+                    <h3 class="text-project">
+                        Project: Love and Education - Online
+                    </h3>
+                </div>
+                <div class="test-item">
+                    <p class="test-text">
+                        “In the past, Kiwi loved to study with you, so when she heard the news that there was a class,
+                        she
+                        was very happy. She is very interested and happy after each lesson. Thank you for giving her the
+                        opportunity to join the class, this is a blessing for Kiwi and us (parents)”
+                    </p>
+                    <h3 class="text-cite">
+                        — Parent
+                    </h3>
+                    <h3 class="text-project">
+                        Project: Love and Education - Online
+                    </h3>
+                </div>
             </div>
         </section>
     </main>
@@ -148,7 +197,7 @@
             <div class="f-nav">
                 <div class="title-links ">
                     <div>
-                        <h2>UPP Global</h2>
+                        <h2 id="footer-title">UPP Global</h2>
                     </div>
 
                     <div id="social-links">
