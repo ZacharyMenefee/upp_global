@@ -29,6 +29,7 @@ main {
     flex-grow: 1;
 }
 
+
 /* Navigation Bar CSS */
 
 .header {
@@ -109,7 +110,7 @@ body,
 header {
     position: absolute;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
     left: 0;
 }
 
@@ -167,13 +168,15 @@ html {
 
 .mission-statement-flex {
     display: flex;
-    margin: 100px 60px;
+    margin: 50px auto 50px auto;
+    height: 100%;
 }
 
 .m-flex-image {
     width: 400px;
     height: 400px;
 }
+
 
 .m-flex-image:nth-of-type(1) {
     margin-left: 160px;
@@ -190,7 +193,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 30px;
+    padding: 30px 0 30px 0;
 
 }
 
@@ -200,7 +203,7 @@ html {
 
 .m-flex-text {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -210,7 +213,7 @@ html {
 
     /*CONTAINER MOVEMENT*/
     position: relative;
-    min-width: 100%;
+    max-width: 100%;
     height: 700px;
     padding-bottom: -30px;
 
@@ -237,27 +240,33 @@ html {
 
 .info-content {
     z-index: 150;
-    position: absolute;
-    top: 200px;
-    right: 0px;
-    height: 200px;
-    width: 500px;
-    margin-right: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .info-header {
     z-index: 150;
     font-size: 24px;
     color: white;
-    margin: 20px;
+    
 }
 
+.info-para {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 50px;
+}
 .info-text {
     z-index: 150;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    margin: 20px;
+    align-self: start;
+    margin: 15px 0;
+    width: 50%;
 }
 
 .info-text a{
@@ -274,24 +283,27 @@ html {
 
 #facts-sect {
     width: 100%;
-    height: 300px;
-    margin: 0 auto;
+    height: min-content;
+    margin: 50px auto 50px auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #fact-title {
     text-align: left;
     font-size: 3rem;
-    margin-left: 250px;
-    margin-top: 20px;
     color: #22bce2;
 }
 
+.fact-content {
+    align-self: center;
+    margin: 10px 0;
+    padding-left: 200px;
+}
+
 .facts-list {
-    display: inline-block;
     text-align: left;
-    margin-left: 200px;
-    
 }
 
 .fact-item {
@@ -299,15 +311,11 @@ html {
     padding: 8px;
     list-style-type: disc;
     font-weight: 400;
-    margin-left: 300px;
  }
 
  #quote {
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 40px;
-    margin-left: 200px;
-    padding-left: 150px;
  }
 
 
@@ -316,11 +324,14 @@ html {
     background-image: url(/static/pexels-rebecca-zaal-764681.jpg);
     position: relative;
     width: 100%;
-    height: 430px;
+    height: min-content;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #testimonials::after {
@@ -338,11 +349,9 @@ html {
 
 .test-title { 
     font-size: 2.5rem;
-    margin-left: 250px;
-    margin-top: 100px;
-    padding-top: 50px;
     z-index: 150;
-    position: relative;
+    margin-top: 50px;
+    align-self: center;
     color: white;
     font-weight: bold;
 }
@@ -350,10 +359,10 @@ html {
 .test-content {
     display: flex;
     flex-direction: row;
-    margin: 30px 250px;
+    margin: 30px 125px 30px 125px;
     z-index: 150;
-    position: relative;
     font-weight: bold;
+    height: auto;
 }
 
 .test-item {
@@ -361,7 +370,7 @@ html {
     font-size: 1.35rem;
     flex: 1 1 0px;
     line-height: 1.5;
-    margin: 8px;
+    margin: 8px auto 8px auto;
     color: white;
     display: flex;
     flex-direction: column;
@@ -398,7 +407,7 @@ FOOTER FLEX BOX CSS
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 75px;
-    height: 350px;
+    height: 400px;
     background: rgb(95, 79, 146);
     background: linear-gradient(180deg, rgba(95, 79, 146, 1) 23%, rgba(95, 79, 146, 1) 34%, rgba(34, 188, 226, 1) 82%);
 }
@@ -474,9 +483,46 @@ i {
     color: white;
 }
 
-/* media query for hamburger animation */
+@media only screen  and (max-width: 1399px) {
 
+    .hero-content {
+        margin: 0 45px;
+    }
+
+    .mission-statement-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto 20px auto;
+    }
+
+    .m-flex-image {
+        margin: 5px 0px;
+    }
+
+    .m-flex-image:nth-of-type(1) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .m-flex-image:nth-of-type(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .test-content {
+        margin: 30px auto 0px auto;
+    }
+
+}
 @media only screen and (max-width: 768px) {
+
+    /* RESPONSIVE HERO IMAGE */
+    .hero-content {
+        margin: 0 15px;
+    }
+    /* RESPONSIVE NAVIGATION SIZING */
     #navigation-links-fs {
         position: fixed;
         left: -100%;
@@ -502,6 +548,7 @@ i {
         display: block;
         cursor: pointer;
     }
+    
 
     .nav-link {
         color: black;
@@ -521,5 +568,91 @@ i {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* RESPONSIVE HERO IMAGE SIZING */
     
+    .mission-statement-flex{
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+
+    .m-flex-image:nth-of-type(1) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .m-flex-image:nth-of-type(2) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .m-flex-image {
+        width: 75%;
+        height: auto;
+    }
+
+    /* INFO SECTION */
+
+    .information-section {
+        height: min-content;
+    }
+    
+    .info-content {
+        align-items: flex-start;
+    }
+
+    .info-para {
+        width: 100%;
+    }
+
+    .info-text {
+        align-self: center;
+        width: 100%;
+    }
+
+    .m-content {
+        padding: 0;
+    }
+
+    .info-content {
+        align-self: center;
+    }
+    /*FACTS SECTION */
+    .fact-content {
+        align-self: flex-start;
+        padding-left: 30px;
+    }
+
+    /* TESTIMONIAL SECTION */
+
+    #testimonials {
+        height: min-content;
+    }
+
+    .test-content {
+        flex-direction: column;
+    }
+
+    /* FOOTER SECTION */
+    .f-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-links {
+        padding-left: 0;
+    }
+    
+    #social-links {
+        align-self: center;
+    }
+    .all-foot-links {
+        padding-left: 60px;
+    }
+
+    .footer-navigation-links {
+        margin-top: 15px;
+        padding-right: 0;
+        flex: 100%;
+    }
 }
