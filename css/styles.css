@@ -145,7 +145,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/static/hero-image.jpg');
+    background: url('../static/hero-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -247,7 +247,7 @@ html {
     height: min-content;
 
     /* BACKGROUND IMAGE QUALITIES */
-    background-image: url(/static/kids-image.JPG);
+    background-image: url('../static/kids-image.JPG');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -353,7 +353,7 @@ html {
 /* TESTIMONIAL SECTION */
 
 #testimonials {
-    background-image: url(/static/pexels-rebecca-zaal-764681.jpg);
+    background-image: url('../static/pexels-rebecca-zaal-764681.jpg');
     position: relative;
     width: 100%;
     height: min-content;
